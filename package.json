@@ -12,7 +12,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.11.12",
@@ -24,10 +25,11 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "husky": "^8.0.2",
-    "prettier": "^2.8.1",
-    "prepare": "husky install"
+    "prettier": "^2.8.1"
   }
 }
